@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/rkpattanaik/Library/Android/sdk/platform-tools/adb",
+    "-s",
+    "emulator-5554",
+    "shell",
+    "perfetto",
+    "--txt",
+    "-c",
+    "/data/misc/perfetto-configs/cg-diagnosis.pbtxt",
+    "-o",
+    "/data/misc/perfetto-traces/cg-diagnosis.pftrace"
+  ],
+  "scenario": "blocked",
+  "iteration": 1
+}

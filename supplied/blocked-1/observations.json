@@ -1,0 +1,58 @@
+{
+  "scenario": "blocked",
+  "iteration": 1,
+  "pid": 9099,
+  "trace_sha256": "91f8083b3c7635f4940530821ec49b721a622ed188b4da4828eea1b13f386f1a",
+  "slices": [
+    {
+      "id": "4393",
+      "name": "CG/blocked/hold",
+      "ts": 3514670729467,
+      "dur": "802795000",
+      "utid": "2597",
+      "tid": "9124",
+      "thread": "cg-loader",
+      "duration_ns": 802795000,
+      "states_ns": {
+        "R": 112709,
+        "Running": 486541,
+        "S": 802195750
+      },
+      "uncovered_ns": 0
+    },
+    {
+      "id": "4394",
+      "name": "CG/source/load",
+      "ts": 3514670776550,
+      "dur": "802498959",
+      "utid": "2597",
+      "tid": "9124",
+      "thread": "cg-loader",
+      "duration_ns": 802498959,
+      "states_ns": {
+        "R": 112709,
+        "Running": 190500,
+        "S": 802195750
+      },
+      "uncovered_ns": 0
+    },
+    {
+      "id": "4444",
+      "name": "CG/blocked/snapshot",
+      "ts": 3514706540134,
+      "dur": "767491417",
+      "utid": "5",
+      "tid": "9099",
+      "thread": "oid.performance",
+      "duration_ns": 767491417,
+      "states_ns": {
+        "R": 389333,
+        "Running": 567417,
+        "S": 766534667
+      },
+      "uncovered_ns": 0
+    }
+  ],
+  "check_in_slices": 0,
+  "diagnostic_stats": []
+}

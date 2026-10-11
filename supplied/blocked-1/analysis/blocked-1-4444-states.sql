@@ -1,0 +1,1 @@
+SELECT state,SUM(MIN(ts+dur,3515474031551)-MAX(ts,3514706540134)) AS duration_ns FROM thread_state WHERE utid=5 AND dur>=0 AND ts<3515474031551 AND ts+dur>3514706540134 GROUP BY state ORDER BY state

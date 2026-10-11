@@ -1,0 +1,115 @@
+{
+  "scope": "Historical Chapter 20 supplied evidence; copied and replayed for Chapter 31, not a new device capture or representative timing benchmark. One blocked iteration selected from the original three-scenario, three-iteration investigation.",
+  "capture_date": "2026-10-07T07:21:24.424987+00:00",
+  "original_manifest": "projects/performance-diagnosis/evidence/traces-candidate1-retry/manifest.json",
+  "original_manifest_sha256": "301e95b2e58bf6c6ffbea76695b36d508ee098b7e29efeedccdc2abf84492b13",
+  "original_analysis_sha256": "af99f532d734333fc662249a79eb137e74b78d38d6b0af74ca175b5929878930",
+  "apk_sha256": "f164a375034d8c95dca67d62fc5733c119a2e921df9b96eba979ecea69d232d2",
+  "device": {
+    "ro.product.model": "sdk_gphone64_arm64",
+    "ro.build.version.sdk": "36",
+    "ro.build.version.release": "16",
+    "ro.build.fingerprint": "google/sdk_gphone64_arm64/emu64a:16/BE2A.250530.026.D1/13818094:user/release-keys",
+    "ro.product.cpu.abi": "arm64-v8a",
+    "ro.boot.qemu.avd_name": "StaffAndroid_API_36"
+  },
+  "scenario_policy": "new app process each run; fixed 800ms local source; 90,000,000 checksum rounds; no representative emulator timing claim",
+  "warmup": "one untraced invocation per selected scenario before capture",
+  "compilation": "cmd package compile -f -m speed; recorded result; same installed optimized/profileable APK",
+  "perfetto_capture_version": "Perfetto v49.0 (N/A)",
+  "thermal": "IsStatusOverride: false\nThermalEventListeners:\n\tcallbacks: 5\n\tkilled: false\n\tbroadcasts count: -1\nThermalStatusListeners:\n\tcallbacks: 3\n\tkilled: false\n\tbroadcasts count: -1\nThermal Status: 0\nCached temperatures:\n\tTemperature{mValue=30.2, mType=2, mName=battery, mStatus=0}\n\tTemperature{mValue=30.1, mType=3, mName=skin, mStatus=0}\nHAL Ready: true\nHAL connection:\n\tThermalHAL AIDL 3  connected: yes\nCurrent temperatures from HAL:\n\tTemperature{mValue=30.1, mType=3, mName=skin, mStatus=0}\n\tTemperature{mValue=30.2, mType=2, mName=battery, mStatus=0}\nCurrent cooling devices from HAL:\nTemperature static thresholds from HAL:\n\tTemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0], mColdThrottlingThresholds=[]}\n\tTemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0], mColdThrottlingThresholds=[]}\nTemperature headroom thresholds:\n[NaN, 0.93333334, 0.96666664, 1.0, 1.0333333, 1.0666667, 1.1]\n",
+  "battery": "Current Battery Service state:\n  AC powered: false\n  USB powered: false\n  Wireless powered: false\n  Dock powered: false\n  Max charging current: 0\n Time when the latest updated value of the Max charging current was sent via battery changed broadcast: +8s267ms\n  Max charging voltage: 0\n  Charge counter: 10000\n  status: 4\n  health: 2\n  present: true\n  level: 100\n  scale: 100\n  voltage: 5000\n Time when the latest updated value of the voltage was sent via battery changed broadcast: +8s267ms\n The last voltage value sent via the battery changed broadcast: 5000\n  temperature: 250\n  technology: Li-ion\n  Charging state: 0\n  Charging policy: 0\n  Capacity level: -1\n",
+  "files": [
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/blocked-1/trace.pftrace",
+      "path": "supplied/blocked-1/trace.pftrace",
+      "sha256": "91f8083b3c7635f4940530821ec49b721a622ed188b4da4828eea1b13f386f1a",
+      "bytes": 653063
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/blocked-1/app.log",
+      "path": "supplied/blocked-1/app.log",
+      "sha256": "efc420b25f32f7bd30b25e352aaaca9e2dbdd075dd768236ca55d0b839130ee9",
+      "bytes": 272
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/blocked-1/attempt.json",
+      "path": "supplied/blocked-1/attempt.json",
+      "sha256": "1056b82f36f63cf79ec4631273cd8c3f32a208bc19dd6fe9ab6a52d1f8ef516a",
+      "bytes": 332
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/blocked-1/capture.log",
+      "path": "supplied/blocked-1/capture.log",
+      "sha256": "302ba089a3861636803cdaf503351cf2fd39da21bb4da17611ab4424766e162c",
+      "bytes": 428
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/blocked-1/launch.txt",
+      "path": "supplied/blocked-1/launch.txt",
+      "sha256": "4c7560f25813d0e7c1e82ce5df13ce97a5d3d155022033310f9d88d3ace51d82",
+      "bytes": 197
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/analysis/blocked-1-4444-states.csv",
+      "path": "supplied/blocked-1/analysis/blocked-1-4444-states.csv",
+      "sha256": "47a1402e58f5479f7000b944ec54af5efd429e61b9a0216296d4006ffa84834f",
+      "bytes": 64
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/analysis/blocked-1-4444-states.sql",
+      "path": "supplied/blocked-1/analysis/blocked-1-4444-states.sql",
+      "sha256": "0c051d00e1c0c1489eed92fbcc676fd74eb87d4a1e379fc4fa148411985296fa",
+      "bytes": 199
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/analysis/blocked-1-slices.csv",
+      "path": "supplied/blocked-1/analysis/blocked-1-slices.csv",
+      "sha256": "c99b03ce2f7110bff6304be85190aa9f44f6f4ef6fef87f19f5fc9d5a4d4a5b7",
+      "bytes": 833
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/analysis/blocked-1-stats.csv",
+      "path": "supplied/blocked-1/analysis/blocked-1-stats.csv",
+      "sha256": "3961ae869d9056eb06c7a3951c9b93887a29e0d9b9937c7b25d36aa3373747c3",
+      "bytes": 32
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/traces-candidate1-retry/config.pbtxt",
+      "path": "supplied/blocked-1/config.pbtxt",
+      "sha256": "cdc2d42029ba6c210ce1c2fee8c590aed1a9f2e6a623fe26875d3ce03a55f288",
+      "bytes": 624
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/candidate1/source/catalog/src/main/kotlin/staff/android/performance/catalog/Catalog.kt",
+      "path": "supplied/blocked-1/source/Catalog.kt",
+      "sha256": "60ee4f1a80e347b246bb634fb7d4758fae784f2981613ea328fb93a63b1e70ca",
+      "bytes": 2841
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/candidate1/source/app/src/main/kotlin/staff/android/performance/MainActivity.kt",
+      "path": "supplied/blocked-1/source/MainActivity.kt",
+      "sha256": "982829e2d38b658be92497ec1db49ba121fb40eb3f38916eb57a078063b52286",
+      "bytes": 10947
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/candidate1/source/app/build.gradle.kts",
+      "path": "supplied/blocked-1/source/app.build.gradle.kts",
+      "sha256": "52f2f0342bfc1a05c935ce7abc053f625dcf1bf61120c572dfc888be69db8962",
+      "bytes": 1229
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/candidate1/source/gradle/libs.versions.toml",
+      "path": "supplied/blocked-1/source/libs.versions.toml",
+      "sha256": "432fdaa1820430e87f43236d3aa5b5ab6f002cd417cfc67c6457a96848f90594",
+      "bytes": 2299
+    },
+    {
+      "origin": "projects/performance-diagnosis/evidence/candidate1/source/catalog/src/main/kotlin/staff/android/performance/catalog/RefreshOwner.kt",
+      "path": "supplied/blocked-1/source/RefreshOwner.kt",
+      "sha256": "6ce8d73ffaed5dadb41c798c8baf7cda33dfc2477b086dae006c46dc12d3becc",
+      "bytes": 1924
+    }
+  ],
+  "observations_sha256": "5d8008b2d281946e9da56d695a06472dfb1469a360c66bf4295653cb737e47cc"
+}
